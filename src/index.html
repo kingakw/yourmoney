@@ -25,7 +25,7 @@
 
             <div class="title-wrapper">
                 <h2 class="title"> Money balance: </h2>
-                <p class="available-money">55550 <small> PLN</small></p>
+                <p class="available-money">0 <small> PLN</small></p>
             </div>
             <div class="controls">
                 <button class="add-transaction"><i class="fa-solid fa-circle-plus"></i>Income</button>
@@ -39,7 +39,7 @@
         <div class="transaction-list">
             <div class="income-area">
                 <h3>Income:</h3>
-                <div class="transaction" id="0">
+                <!--<div class="transaction" id="0">
                     <p class="transaction-name"><i class="fas fa-money-bill-wave"></i>Salary</p>
                     <p class="transaction-amount">5000 PLN
                         <button class="delete"><i class="fas fa-times"></i></button>
@@ -50,11 +50,12 @@
                     <p class="transaction-amount">5000 PLN
                         <button class="delete"><i class="fas fa-times"></i></button>
                     </p>
-                </div>
+                </div>-->
             </div>
+
             <div class="expenses-area">
                 <h3>Expenses:</h3>
-                <div class="transaction" id="1">
+               <!-- <div class="transaction" id="1">
                     <p class="transaction-name"><i class="fas fa-cart-arrow-down"></i>Food/Shopping</p>
                     <p class="transaction-amount">-500PLN
                         <button class="delete"><i class="fas fa-times"></i></button>
@@ -95,40 +96,40 @@
                     <p class="transaction-amount">-50PLN
                         <button class="delete"><i class="fas fa-times"></i></button>
                     </p>
-                </div>
+                </div>-->
             </div>
         </div>
 
     </section>
 
-
 </main>
 
 <div class="add-transaction-panel">
 
-    <h2 class="title">Add income</h2>
+    <h2 class="title add">Add income</h2>
+    <h2 class="title subtract">Add expenses</h2>
     <label class= "panel-label" for="name">Name of transaction:</label>
     <input class= "panel-input" type="text" id="name">
 
 
-    <div class="add-money active">
+    <div class="panel-add-money">
         <label class= "panel-label" for="amount-add">Amount:</label>
         <input class= "panel-input" type="text" id="amount-add">
 
-        <label  class= "panel-label" for="category-add"> Category:</label>
-        <select class= "panel-select" id="category-add" onchange="selectCategory()">
+        <label class= "panel-label" for="category-add"> Category:</label>
+        <select class= "panel-select" id="category-add">
             <option value="none" selected disabled></option>
             <option value="salary">[ + ] Salary</option>
             <option value="income">[ + ] Extra income</option>
         </select>
     </div>
 
-    <div class="subtract-money active">
-        <label  class= "panel-label" for="amount-subtract">Amount:</label>
+    <div class="panel-subtract-money">
+        <label class= "panel-label" for="amount-subtract">Amount:</label>
         <input class= "panel-input" type="text" id="amount-subtract">
 
         <label  class= "panel-label" for="category-subtract"> Category:</label>
-        <select class= "panel-select" id="category-subtract" onchange="selectCategory()">
+        <select class= "panel-select" id="category-subtract" >
             <option value="none" selected disabled></option>
             <option value="food">[ - ] Food/Shopping</option>
             <option value="going">[ - ] Going out</option>
@@ -141,8 +142,8 @@
     </div>
 
     <div class="panel-buttons">
-        <button class="save"><i class="fas fa-save"></i>save</button>
-        <button class="cancel"><i class="fas fa-window-close"></i>cancel</button>
+        <button class="panel-save"><i class="fas fa-save"></i>save</button>
+        <button class="panel-cancel"><i class="fas fa-window-close"></i>cancel</button>
     </div>
 </div>
 

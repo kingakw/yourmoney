@@ -50,6 +50,7 @@ main {
 .options {
     width: 1000px;
 }
+
 .options-wrapper {
     margin: 40px 20px;
     padding: 10px;
@@ -60,7 +61,8 @@ main {
     align-items: center;
 
 }
-.title-wrapper{
+
+.title-wrapper {
     color: var(--first-color);
 }
 
@@ -74,15 +76,17 @@ main {
     align-items: center;
     margin-left: 230px;
 }
+
 .controls button i {
-    font-size:30px;
+    font-size: 30px;
 }
+
 .controls button {
     color: var(--first-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px ;
+    padding: 10px;
     border: none;
     border-radius: 10px;
     background: none;
@@ -160,14 +164,14 @@ main {
 }
 
 .add-transaction-panel {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -80%);
     width: 1000px;
     background-color: var(--green-color);
     padding: 50px;
@@ -180,9 +184,14 @@ main {
     text-transform: uppercase;
 }
 
-.add-money,
-.subtract-money {
-    display: flex;
+.add,
+.subtract {
+    display: none;
+}
+
+.panel-add-money,
+.panel-subtract-money {
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -213,7 +222,6 @@ main {
     font-size: 18px;
 }
 
-
 .add-transaction-panel .panel-buttons {
     display: flex;
     justify-content: center;
@@ -224,13 +232,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 50px ;
+    padding: 10px 50px;
     border: none;
     border-radius: 10px;
     background: none;
     transition: color .3s, background-color .3s;
     cursor: pointer;
     font-family: var(--font-family);
+    color: var(--first-color);
 }
 
 .add-transaction-panel button:hover {
