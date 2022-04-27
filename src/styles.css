@@ -159,3 +159,85 @@ main {
     transform: scale(.8);
 }
 
+.add-transaction-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    background-color: var(--green-color);
+    padding: 50px;
+    box-shadow: 0 0 10px var(--second-color);
+    border-radius: 5px;
+}
+
+.add-transaction-panel h2.title {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.add-money,
+.subtract-money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.panel-label {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+.panel-input,
+.panel-select {
+    width: 800px;
+}
+
+.panel-input,
+.panel-select,
+.add-transaction-panel button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.panel-input,
+.panel-select,
+.panel-select option {
+    font-size: 18px;
+}
+
+
+.add-transaction-panel .panel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.add-transaction-panel button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 50px ;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    transition: color .3s, background-color .3s;
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+.add-transaction-panel button:hover {
+    color: var(--second-color);
+    background-color: var(--first-color);
+}
+
+.add-transaction-panel .panel-buttons i {
+    font-size: 50px;
+}
