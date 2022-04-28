@@ -86,7 +86,48 @@ const checkSubtractForm = () => {
     }
 }
 
+const createNewTransaction = (transaction, category) => {
+    let newTransaction = document.createElement('div');
+    newTransaction.classList.add('transaction');
+    newTransaction.setAttribute('id', ID);
+    checkCategory(category.options[category.selectedIndex].text);
+
+    newTransaction.innerHTML = `
+    <p class="transaction-name"> ${categoryIcon} ${nameInput.value} </p>
+    <p class="transaction-amount"> ${transaction.value} PLN 
+        <button class="delete" onclick="deleteTransaction(${ID})"><i class="fas fa-times"></i></button>
+    </p>
+    `
+    if (transaction === amountAdd ){
+        incomeSection.appendChild(newTransaction);
+        newTransaction.classList.add('income')
+    }  else {
+        expensesSection.appendChild(newTransaction);
+        newTransaction.classList.add('expense')
+    }
+}
+
 const createAddTransaction = () => {
+    createNewTransaction(amountAdd, categoryAdd);
+
+    moneyArr.push(parseFloat(amountAdd.value));
+    countMoney(moneyArr);
+    closePanel();
+    ID++
+    clearInputs();
+}
+
+const createSubtractTransaction = () => {
+    createNewTransaction(amountSubtract, categorySubtract);
+
+    moneyArr.push(-parseFloat(amountSubtract.value));
+    countMoney(moneyArr);
+    closePanel();
+    ID++
+    clearInputs();
+}
+
+/*const createAddTransaction = () => {
     const newTransaction = document.createElement('div');
     newTransaction.classList.add('transaction');
     newTransaction.setAttribute('id', ID);
@@ -98,7 +139,6 @@ const createAddTransaction = () => {
         <button class="delete" onclick="deleteTransaction(${ID})"><i class="fas fa-times"></i></button>
     </p>
     `
-
     incomeSection.appendChild(newTransaction);
     newTransaction.classList.add('income')
 
@@ -130,7 +170,7 @@ const createSubtractTransaction = () => {
     closePanel();
     ID++
     clearInputs();
-}
+}*/
 
 const checkCategory = transaction => {
     switch (transaction) {
