@@ -7,7 +7,8 @@ Get and keep full control of your finances.
 
 # Technologies used
 
-HTML5, CSS3, Fontawesome ECMAScript 6 (Vanilla JS)
+HTML5, CSS3, Fontawesome 
+JavaScript (Vanilla JS)
 GitFlow
 
 ### Live Demo
