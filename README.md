@@ -1,22 +1,28 @@
-# Project description
+# 📝 DESCRIPTION
 
-YourMoney is an application designed to help you manage your money, so you stay in control and achieve your future
+YourMoney is a simple application designed to help you manage your money, so you stay in control and achieve your future
 investment goals. YourMoney will help you to control your finances, analyze expenses and finally limit e.g. unnecessary
 purchases.  
 Get and keep full control of your finances.
 
-# Technologies used
+# 📓 TECHNOLOGIES
+* JavaScript (Vanilla JS)
+* GitFlow
+* HTML5
+* CSS3
+* Fontawesome
 
-HTML5, CSS3, Fontawesome 
-JavaScript (Vanilla JS)
-GitFlow
+# 👌 FEATURES
+* You can add and manage your expenses
+* You can remove unwanted item
+* You can select different categories for your expenses
+* Money balance will update after each transaction
 
-### Live Demo
+# ▶️ DEMO
+https://kingakw.github.io/yourMoney/
 
-https://kingakw.github.io/....
+![BooksScreen](sample.png)
 
-# License
-
+# 🆔 LICENSE
 MIT License
-
 

@@ -169,7 +169,7 @@ main {
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -80%);
     width: 1000px;
