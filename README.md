@@ -19,7 +19,7 @@ Get and keep full control of your finances.
 * Money balance will update after each transaction
 
 # ▶️ DEMO
-https://kingakw.github.io/yourMoney/
+https://kingakw.github.io/yourmoney/
 
 ![BooksScreen](sample.png)
 
